@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatter</title>
+    <link rel="stylesheet" href="textformat.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Formatter</h1>
+
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+        <div class="buttons">
+            <button onclick="uppercase()" class="uppercase">UPPERCASE</button>
+            <button onclick="lowercase()" class="lowercase">lowercase</button>
+            <button onclick="capWords()" class="capWords">Capitalize Words</button>
+            <button onclick="removespaces()" class="removespaces">Remove Extra Spaces</button>
+            <button onclick="replacewords()" class="replaceWord">Replace Word</button>
+            <button onclick="carCount()" class="carCount">Count Characters</button>
+        </div>
+
+        <div class="output">
+            <h2>Formatted Text:</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="textformat.js"></script>
+</body>
+</html>
